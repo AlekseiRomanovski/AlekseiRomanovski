@@ -49,8 +49,8 @@
 
  ![my foto](logo21.png) Удаление файлов из отслеживаемых Git*
 ## *12. Использование команда GIT reset*
-Для удаления файлов  из отслеживаемых используем команду /git reset название файла ![my foto](logo23.png) 
-Для удаления последнего комита используем команду /git reset HEAD~ ![my foto](logo24.png) 
-Для удаления последнего комита и изменений используем команду /git reset --hard HEAD~![my foto](logo25.png)
-Состояние комитов и файла до использования  команды /git reset --hard HEAD~  ![my foto](logo26.png)
-Состояние комитов и файла после использования команды  /git reset --hard HEAD~ ![my foto](logo27.png)
+Для удаления файлов  из отслеживаемых используем команду /git reset название файла ![my foto](logo23.png)  
+Для удаления последнего комита используем команду /git reset HEAD~ ![my foto](logo24.png)  
+Для удаления последнего комита и изменений используем команду /git reset --hard HEAD~![my foto](logo25.png)  
+Состояние комитов и файла до использования  команды /git reset --hard HEAD~   ![my foto](logo26.png)  ![my foto](logo26_1.png)
+ Состояние комитов и файла после использования команды  /git reset --hard HEAD~ ![my foto](logo27.png) ![my foto](logo27_1.png)
