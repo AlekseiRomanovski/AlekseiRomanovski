@@ -6,6 +6,5 @@
 */
 Console.WriteLine("Введите число a = ");
 int a = Convert.ToInt32(Console.ReadLine());
-if (a < 0) a = a* - 1;
 if (a % 2 == 0) Console.WriteLine("Число а четное");
-else Console.WriteLine("Число а не четное");
+else Console.WriteLine("Число а нечетное");
