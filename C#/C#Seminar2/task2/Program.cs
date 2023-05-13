@@ -6,6 +6,5 @@
 Random rand = new Random();
 int number = rand.Next(100, 1000);
 int a = number/100;
-int b = number%100;
-int c = b%10;
-Console.WriteLine($"Наше число {number}. Результат {a}{c}.");
+int b = number%10;
+Console.WriteLine($"Наше число {number}. Результат {a}{b}.");
