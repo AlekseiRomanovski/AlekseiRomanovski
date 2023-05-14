@@ -4,7 +4,7 @@
 
 Console.Write("Введите число N = ");
 int n = Convert.ToInt32(Console.ReadLine());
-while (n != 0)
-{   Console.Write($"{n*n}, ");
-    n = n - 1;
+for (int i = 1; i <= n; i++)
+{
+    Console.Write($"{i*i}, ");
 }
