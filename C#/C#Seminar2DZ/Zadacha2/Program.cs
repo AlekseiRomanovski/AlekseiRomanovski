@@ -4,14 +4,13 @@
 32679 -> 6*/
 Console.Write("Введите число а = ");
 int a = Convert.ToInt32(Console.ReadLine());
-int b = a/100;
-int c = a%10;
-
-int d = a/100;
-int e = a/100;
-if (b==0)
+while (a > 999)
 {
-    Console.Write($" В числе {a} нет третьей цифры");
+   a = a/=10;
+}
+if (a < 100)
+{
+    Console.Write("В введеном числе нет третьей цифры");
 }
 else{
-Console.Write($" третьей цифрой числа {a}, является {c}");}
+Console.Write($"Третьей цифрой числа, является {a%10}");}
