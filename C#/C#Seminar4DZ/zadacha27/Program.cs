@@ -3,26 +3,23 @@
 82 -> 10
 9012 -> 12*/
 
+int Input (string text)
+{
+    Console.Write(text);
+    int a = Convert.ToInt32(Console.ReadLine());
+    return a;
+}
 int Sum(int a)
 {
-    int sum = 0;
-    double b = a;
-    for (int i = 1; i < count; i++)
-    {
-        sum +=i;
-    }
-    return sum;
+   int sum = 0;
+   while (a> 0)
+   {
+       int b = a%10;
+       sum = sum + b;
+       a/=10; 
+   }
+   return sum;
 }
 
-int result = Sum(452);
-Console.WriteLine(result);
-
- 
-/*int main()
- {
-	int x, n=1;
-	cin >> x;
-	while ((x/=10) > 0) n++;
-	cout << n;
-	return 0;
-}*/
+int a = Input ("Введите число: ");
+Console.WriteLine($"Сумма цифр в числе {a} = {Sum(a)}");

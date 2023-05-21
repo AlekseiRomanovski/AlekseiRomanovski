@@ -2,13 +2,25 @@
 3, 5 -> 243 (3⁵)
 2, 4 -> 16*/
 
-int Prompt
-double Multi(double a, double b)
+int Input (string text)
 {
-    double result = Math.Pow(a, b);
+    Console.Write(text);
+    int a = Convert.ToInt32(Console.ReadLine());
+    return a;
+}
+
+int Power(int a, int b)
+{
+    double c = Convert.ToDouble(a);
+    double d = Convert.ToDouble(b);
+    int result = Convert.ToInt32(Math.Pow(c, d));
     return result;
 }
-double result1 = Multi(3, 5);
-Console.WriteLine(result1);
-double result2 = Multi(2, 4);
-Console.WriteLine(result2);
+int a = Input ("Введите основание: ");
+int b = Input ("Введите  показатель степени: ");
+if (b < 0)
+{
+    Console.WriteLine("Показатель не должен быть меньше нуля");
+    return;
+}
+Console.WriteLine($"Число {a} в степени {b} равно {Power (a,b)}");
